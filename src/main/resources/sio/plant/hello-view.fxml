@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.plant.HelloController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane fx:id="idAccueil" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="600.0">
+                     <image>
+                        <Image url="@../../images/interface/accueil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="243.0" layoutY="200.0" onMouseClicked="#clickStart" AnchorPane.topAnchor="200.0">
+                     <image>
+                        <Image url="@../../images/interface/menu/button.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="269.0" layoutY="205.0" onMouseClicked="#clickStart" text="START" textFill="#ffa300">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="idFerme" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.2593582887700534" prefHeight="400.0" prefWidth="600.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="398.0" prefWidth="144.0">
+                                 <children>
+                                    <AnchorPane prefHeight="108.0" prefWidth="144.0">
+                                       <children>
+                                          <ImageView fitHeight="30.0" fitWidth="128.0" layoutX="8.0" layoutY="39.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/cadre.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="31.0" fitWidth="46.0" layoutX="8.0" layoutY="36.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/Sachet_Graine.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="30.0" fitWidth="128.0" layoutX="8.0" layoutY="79.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/cadre.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="31.0" fitWidth="46.0" layoutX="8.0" layoutY="78.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/ble.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="8.0" layoutY="-1.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/money.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="moneyLabel" layoutX="66.0" layoutY="-1.0" prefHeight="35.0" prefWidth="46.0" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="idGraine" layoutX="66.0" layoutY="36.0" prefHeight="35.0" prefWidth="46.0" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="idBle" layoutX="66.0" layoutY="78.0" prefHeight="35.0" prefWidth="46.0" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
+                                    <AnchorPane prefHeight="125.0" prefWidth="144.0">
+                                       <children>
+                                          <ImageView fx:id="idHoue" fitHeight="70.0" fitWidth="70.0" layoutY="26.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/Houe_1.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="CLOSED_HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <ImageView fx:id="idArrosoir" fitHeight="70.0" fitWidth="70.0" layoutX="72.0" layoutY="26.0" >
+                                             <image>
+                                                <Image url="@../../images/interface/menu/arrosoir_1.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="CLOSED_HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                       </children></AnchorPane>
+                                    <AnchorPane prefHeight="166.0" prefWidth="144.0">
+                                       <children>
+                                          <ImageView fitHeight="30.0" fitWidth="144.0">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="-3.0" layoutY="40.0" onMouseClicked="#clickGraine">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/ble_cadre.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="CLOSED_HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <ImageView fitHeight="72.0" fitWidth="75.0" layoutX="67.0" layoutY="42.0" onMouseClicked="#clickMoney">
+                                             <image>
+                                                <Image url="@../../images/interface/menu/money_cadre.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="CLOSED_HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label layoutX="40.0" layoutY="-3.0" text="SHOP" textFill="#30c73f">
+                                             <font>
+                                                <Font name="System Bold Italic" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="34.0" layoutY="78.0" prefHeight="35.0" prefWidth="31.0" text="30" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="103.0" layoutY="83.0" prefHeight="26.0" prefWidth="31.0" text="20" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <GridPane fx:id="farmGrid" alignment="CENTER" gridLinesVisible="true" hgap="5" vgap="5" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="idFin" prefHeight="400.0" prefWidth="600.0" visible="false">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-1.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../../images/interface/victoire.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="161.0" fitWidth="200.0" layoutX="199.0" layoutY="75.0">
+                     <image>
+                        <Image url="@../../images/interface/trophee.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="259.0" layoutY="246.0">
+                     <image>
+                        <Image url="@../../images/interface/soleil.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="359.0" layoutY="246.0">
+                     <image>
+                        <Image url="@../../images/interface/soleil.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="172.0" layoutY="246.0">
+                     <image>
+                        <Image url="@../../images/interface/soleil.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="240.0" text="Bravo !" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</Pane>
