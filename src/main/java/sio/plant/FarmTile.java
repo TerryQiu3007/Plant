@@ -28,6 +28,7 @@ public class FarmTile {
 
     public int harvest() {
         planted = false;
+        arroser = false;
         updateImage("/images/terrain/terre.png");
         return 20;
     }
