@@ -144,12 +144,12 @@
                                                 <Font name="System Bold Italic" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label layoutX="34.0" layoutY="78.0" prefHeight="35.0" prefWidth="31.0" text="30" textFill="WHITE">
+                                          <Label layoutX="34.0" layoutY="78.0" onMouseClicked="#clickGraine" prefHeight="35.0" prefWidth="31.0" text="30" textFill="WHITE">
                                              <font>
                                                 <Font name="System Bold" size="16.0" />
                                              </font>
                                           </Label>
-                                          <Label layoutX="111.0" layoutY="82.0" prefHeight="26.0" prefWidth="31.0" text="20" textFill="WHITE">
+                                          <Label layoutX="111.0" layoutY="82.0" onMouseClicked="#clickMoney" prefHeight="26.0" prefWidth="31.0" text="20" textFill="WHITE">
                                              <font>
                                                 <Font name="System Bold" size="16.0" />
                                              </font>
