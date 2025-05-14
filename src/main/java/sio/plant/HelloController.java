@@ -140,6 +140,7 @@ public class HelloController implements Initializable {
         if (money >= 30) {
             money -= 30;
             graine += 1;
+            System.out.println("-30");
             updateMoneyDisplay();
             updateGraineDisplay();
         }
