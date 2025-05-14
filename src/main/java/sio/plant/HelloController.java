@@ -12,7 +12,6 @@ import javafx.scene.layout.GridPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 public class HelloController implements Initializable {
 
     @FXML
@@ -133,6 +132,7 @@ public class HelloController implements Initializable {
         setupHoeCursor();
         setupButton();
         setupArrosoirCursor();
+
     }
 
     @FXML
@@ -234,6 +234,7 @@ public class HelloController implements Initializable {
             activeArroseur.setY(e.getSceneY() - 30);
         });
     }
+
     private void removeArrosoirTracking() {
         farmGrid.setOnMouseMoved(null);
         farmGrid.setOnMouseClicked(null);
