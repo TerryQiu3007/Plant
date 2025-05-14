@@ -40,7 +40,7 @@ public class HelloController implements Initializable {
     private boolean isArrosoirSelected = false;
 
     private static final int TILE_SIZE = 64;
-    private static final int GRID_SIZE = 5;
+    private static final int GRID_SIZE = 6;
     private int money = 30;
     private int graine = 3;
     private int ble = 0;
