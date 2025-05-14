@@ -128,7 +128,7 @@
                                                 <Image url="@../../images/interface/menu/ble_cadre.png" />
                                              </image>
                                              <cursor>
-                                                <Cursor fx:constant="CLOSED_HAND" />
+                                                <Cursor fx:constant="OPEN_HAND" />
                                              </cursor>
                                           </ImageView>
                                           <ImageView fitHeight="72.0" fitWidth="75.0" layoutX="73.0" layoutY="42.0" onMouseClicked="#clickMoney">
@@ -136,7 +136,7 @@
                                                 <Image url="@../../images/interface/menu/money_cadre.png" />
                                              </image>
                                              <cursor>
-                                                <Cursor fx:constant="CLOSED_HAND" />
+                                                <Cursor fx:constant="OPEN_HAND" />
                                              </cursor>
                                           </ImageView>
                                           <Label layoutX="40.0" layoutY="-3.0" text="SHOP" textFill="#30c73f">
@@ -148,11 +148,17 @@
                                              <font>
                                                 <Font name="System Bold" size="16.0" />
                                              </font>
+                                             <cursor>
+                                                <Cursor fx:constant="CLOSED_HAND" />
+                                             </cursor>
                                           </Label>
                                           <Label layoutX="111.0" layoutY="82.0" onMouseClicked="#clickMoney" prefHeight="26.0" prefWidth="31.0" text="20" textFill="WHITE">
                                              <font>
                                                 <Font name="System Bold" size="16.0" />
                                              </font>
+                                             <cursor>
+                                                <Cursor fx:constant="CLOSED_HAND" />
+                                             </cursor>
                                           </Label>
                                        </children></AnchorPane>
                                  </children>
